@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Organização</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🗓️ Painel de Organização</h1>
+      <p>Gerencie tarefas e notas do seu dia</p>
+    </header>
+
+    <main>
+      <section class="painel" id="tarefas">
+        <h2>Tarefas</h2>
+        <div class="nova-tarefa">
+          <input type="text" id="tarefaInput" placeholder="Adicionar nova tarefa...">
+          <button id="addTarefa">+</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+      </section>
+
+      <section class="painel" id="notas">
+        <h2>Notas Rápidas</h2>
+        <textarea id="notaInput" placeholder="Digite sua nota aqui..."></textarea>
+        <button id="addNota">Salvar Nota</button>
+        <div id="notasSalvas"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
